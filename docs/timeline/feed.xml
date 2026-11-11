@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Barkdown: thoughts</title>
-  <id>/example-build/timeline/</id>
+  <id>https://pratik.deoghare.com/barkdown/timeline/</id>
   <updated>2026-11-09T07:45:00+01:00</updated>
-  <link href="/example-build/timeline/feed.xml" rel="self" type="application/atom+xml"></link>
-  <link href="/example-build/timeline/" rel="alternate" type="text/html"></link>
+  <link href="https://pratik.deoghare.com/barkdown/timeline/feed.xml" rel="self" type="application/atom+xml"></link>
+  <link href="https://pratik.deoghare.com/barkdown/timeline/" rel="alternate" type="text/html"></link>
   <author>
     <name>A. Writer</name>
   </author>
   <generator>barkdown</generator>
   <entry>
     <title>Notes on margins, 9 November 2026, 07:45</title>
-    <id>/example-build/posts/margins/#t-2026-11-09-0745</id>
+    <id>https://pratik.deoghare.com/barkdown/posts/margins/#t-2026-11-09-0745</id>
     <published>2026-11-09T07:45:00+01:00</published>
     <updated>2026-11-09T07:45:00+01:00</updated>
-    <link href="/example-build/posts/margins/#t-2026-11-09-0745" rel="alternate" type="text/html"></link>
+    <link href="https://pratik.deoghare.com/barkdown/posts/margins/#t-2026-11-09-0745" rel="alternate" type="text/html"></link>
     <summary type="text">On a phone there is no margin, so the notes fold away behind their numbers. Tufte CSS does this with a hidden checkbox and no script at all, which is…</summary>
-    <content type="html" xml:base="/example-build/posts/margins/">&lt;p&gt;On a phone there is no margin, so the notes fold away behind their numbers. Tufte CSS does this with a&#xA;  hidden checkbox and no script at all, which is the kind of trick worth keeping.&lt;/p&gt;&#xA;</content>
+    <content type="html" xml:base="https://pratik.deoghare.com/barkdown/posts/margins/">&lt;p&gt;On a phone there is no margin, so the notes fold away behind their numbers. Tufte CSS does this with a&#xA;  hidden checkbox and no script at all, which is the kind of trick worth keeping.&lt;/p&gt;&#xA;</content>
   </entry>
   <entry>
     <title>Notes on margins, 6 November 2026, 22:10</title>
-    <id>/example-build/posts/margins/#t-2026-11-06-2210</id>
+    <id>https://pratik.deoghare.com/barkdown/posts/margins/#t-2026-11-06-2210</id>
     <published>2026-11-06T22:10:00+01:00</published>
     <updated>2026-11-06T22:10:00+01:00</updated>
-    <link href="/example-build/posts/margins/#t-2026-11-06-2210" rel="alternate" type="text/html"></link>
+    <link href="https://pratik.deoghare.com/barkdown/posts/margins/#t-2026-11-06-2210" rel="alternate" type="text/html"></link>
     <summary type="text">Code wants a margin too: the language of a listing, its name in a literate program, a button to copy it. None of these is part of the code, so…</summary>
-    <content type="html" xml:base="/example-build/posts/margins/">&lt;p&gt;Code wants a margin too: the language of a listing, its name in a literate program, a button to copy it.&#xA;  None of these is part of the code, so none of them should sit on top of it.&lt;/p&gt;&#xA;</content>
+    <content type="html" xml:base="https://pratik.deoghare.com/barkdown/posts/margins/">&lt;p&gt;Code wants a margin too: the language of a listing, its name in a literate program, a button to copy it.&#xA;  None of these is part of the code, so none of them should sit on top of it.&lt;/p&gt;&#xA;</content>
   </entry>
   <entry>
     <title>Notes on margins, 4 November 2026</title>
-    <id>/example-build/posts/margins/#t-2026-11-04</id>
+    <id>https://pratik.deoghare.com/barkdown/posts/margins/#t-2026-11-04</id>
     <published>2026-11-04T00:00:00+01:00</published>
     <updated>2026-11-04T00:00:00+01:00</updated>
-    <link href="/example-build/posts/margins/#t-2026-11-04" rel="alternate" type="text/html"></link>
+    <link href="https://pratik.deoghare.com/barkdown/posts/margins/#t-2026-11-04" rel="alternate" type="text/html"></link>
     <summary type="text">A footnote asks the reader to leave the line and come back. A sidenote waits beside it.This one, for instance. The difference sounds small and is not.</summary>
-    <content type="html" xml:base="/example-build/posts/margins/">&lt;p&gt;A footnote asks the reader to leave the line and come back. A sidenote waits beside it.&lt;label for=&#34;sn-1&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;1&lt;/label&gt;&lt;input type=&#34;checkbox&#34; id=&#34;sn-1&#34; class=&#34;margin-toggle&#34;&gt;&lt;span class=&#34;sidenote&#34;&gt;&lt;span class=&#34;sidenote-mark&#34;&gt;1&lt;/span&gt; This one,&#xA;  for instance.&lt;/span&gt; The difference sounds small and is not.&lt;/p&gt;&#xA;</content>
+    <content type="html" xml:base="https://pratik.deoghare.com/barkdown/posts/margins/">&lt;p&gt;A footnote asks the reader to leave the line and come back. A sidenote waits beside it.&lt;label for=&#34;sn-1&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;1&lt;/label&gt;&lt;input type=&#34;checkbox&#34; id=&#34;sn-1&#34; class=&#34;margin-toggle&#34;&gt;&lt;span class=&#34;sidenote&#34;&gt;&lt;span class=&#34;sidenote-mark&#34;&gt;1&lt;/span&gt; This one,&#xA;  for instance.&lt;/span&gt; The difference sounds small and is not.&lt;/p&gt;&#xA;</content>
   </entry>
   <entry>
     <title>Notes on margins, 2 November 2026, 08:15</title>
-    <id>/example-build/posts/margins/#t-2026-11-02-0815</id>
+    <id>https://pratik.deoghare.com/barkdown/posts/margins/#t-2026-11-02-0815</id>
     <published>2026-11-02T08:15:00+01:00</published>
     <updated>2026-11-02T08:15:00+01:00</updated>
-    <link href="/example-build/posts/margins/#t-2026-11-02-0815" rel="alternate" type="text/html"></link>
+    <link href="https://pratik.deoghare.com/barkdown/posts/margins/#t-2026-11-02-0815" rel="alternate" type="text/html"></link>
     <summary type="text">Tufte&#39;s books keep a wide margin on every page, and use it: notes, small pictures, captions. The margin is not empty space waiting for something; it is where the second…</summary>
-    <content type="html" xml:base="/example-build/posts/margins/">&lt;p&gt;Tufte&amp;#39;s books keep a wide margin on every page, and use it: notes, small pictures, captions. The margin&#xA;  is not empty space waiting for something; it is where the second voice of the book lives.&lt;/p&gt;&#xA;</content>
+    <content type="html" xml:base="https://pratik.deoghare.com/barkdown/posts/margins/">&lt;p&gt;Tufte&amp;#39;s books keep a wide margin on every page, and use it: notes, small pictures, captions. The margin&#xA;  is not empty space waiting for something; it is where the second voice of the book lives.&lt;/p&gt;&#xA;</content>
   </entry>
 </feed>

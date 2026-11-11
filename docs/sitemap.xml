@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/example-build/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/</loc>
   </url>
   <url>
-    <loc>/example-build/posts/literate-fizzbuzz/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/posts/literate-fizzbuzz/</loc>
     <lastmod>2026-11-07</lastmod>
   </url>
   <url>
-    <loc>/example-build/posts/barkdown/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/posts/barkdown/</loc>
     <lastmod>2026-11-05</lastmod>
   </url>
   <url>
-    <loc>/example-build/posts/tour/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/posts/tour/</loc>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>/example-build/posts/margins/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/posts/margins/</loc>
     <lastmod>2026-11-09</lastmod>
   </url>
   <url>
-    <loc>/example-build/posts/welcome/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/posts/welcome/</loc>
     <lastmod>2026-11-01</lastmod>
   </url>
   <url>
-    <loc>/example-build/about/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/about/</loc>
   </url>
   <url>
-    <loc>/example-build/tags/barkdown/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/tags/barkdown/</loc>
   </url>
   <url>
-    <loc>/example-build/tags/brashtag/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/tags/brashtag/</loc>
   </url>
   <url>
-    <loc>/example-build/tags/design/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/tags/design/</loc>
   </url>
   <url>
-    <loc>/example-build/tags/go/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/tags/go/</loc>
   </url>
   <url>
-    <loc>/example-build/tags/literate-programming/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/tags/literate-programming/</loc>
   </url>
   <url>
-    <loc>/example-build/tags/reference/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/tags/reference/</loc>
   </url>
   <url>
-    <loc>/example-build/tags/tufte/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/tags/tufte/</loc>
   </url>
   <url>
-    <loc>/example-build/tags/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/tags/</loc>
   </url>
   <url>
-    <loc>/example-build/archive/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/archive/</loc>
   </url>
   <url>
-    <loc>/example-build/timeline/</loc>
+    <loc>https://pratik.deoghare.com/barkdown/timeline/</loc>
   </url>
 </urlset>
