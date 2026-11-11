@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 140" width="640" height="140" font-family="Palatino, 'Palatino Linotype', 'TeX Gyre Pagella', serif" font-size="18">
+  <rect width="640" height="140" rx="12" fill="none"/>
+  <g fill="none" stroke="#111" stroke-width="2">
+    <rect x="30" y="40" width="140" height="60" rx="8"/>
+    <rect x="250" y="40" width="140" height="60" rx="8"/>
+    <rect x="470" y="40" width="140" height="60" rx="8"/>
+  </g>
+  <g fill="#111" text-anchor="middle">
+    <text x="100" y="76">post.bt</text>
+    <text x="320" y="76">tree</text>
+    <text x="540" y="76">HTML</text>
+  </g>
+  <g stroke="#555" stroke-width="2" fill="none">
+    <path d="M175 70h65m-10-7 10 7-10 7"/>
+    <path d="M395 70h65m-10-7 10 7-10 7"/>
+  </g>
+  <g fill="#7d6a5a" font-size="13" text-anchor="middle">
+    <text x="210" y="58">parse</text>
+    <text x="430" y="58">render</text>
+  </g>
+</svg>
