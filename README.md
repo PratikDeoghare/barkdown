@@ -68,6 +68,5 @@ Deploy by copying `public/` to any static host. For GitHub Pages under a reposit
 ## Regenerating the Go files
 
 ```
-python tangle.py barkdown.lit .     # brashtag-literate tools
-diff brashtag/parser.go path/to/brashtag/parser.go
+lit tangle barkdown.lit .     # brashtag-literate tools
 ```

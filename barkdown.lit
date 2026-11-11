@@ -6644,8 +6644,7 @@ and example files were defined as file chunks in their own sections.
   ## Regenerating the Go files
 
   ```
-  python tangle.py barkdown.lit .     # brashtag-literate tools
-  diff brashtag/parser.go path/to/brashtag/parser.go
+  lit tangle barkdown.lit .     # brashtag-literate tools
   ```
   ````
 }
