@@ -5521,7 +5521,7 @@ a configuration.
     #by{Harold Abelson and Gerald Jay Sussman, #cite{Structure and Interpretation of Computer Programs}}
   }
 
-  #newthought{This post shows} what a barkdown post can contain. Its source is `posts/2026-11-03-tour/index.bt`;
+  #newthought{This post shows} what a barkdown post can contain. Its source is #link{https://github.com/PratikDeoghare/barkdown/blob/master/example/posts/2026-11-03-tour/index.bt `posts/2026-11-03-tour/index.bt`};
   read the two side by side.
 
   #more{}

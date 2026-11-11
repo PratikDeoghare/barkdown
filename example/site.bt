@@ -2,6 +2,6 @@
 #subtitle{A small blog written in brashtag.}
 #description{An example site made with barkdown, a static site generator for brashtag.}
 #author{A. Writer}
-#baseurl{https://example.com/}
+#baseurl{https://pratik.deoghare.com/barkdown/}
 #perpage{5}
 #footer{Made with #link{https://github.com/PratikDeoghare/brashtag brashtag} and barkdown.}
