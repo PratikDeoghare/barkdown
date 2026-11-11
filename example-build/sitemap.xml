@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/</loc>
+    <loc>/example-build/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/posts/literate-fizzbuzz/</loc>
+    <loc>/example-build/posts/literate-fizzbuzz/</loc>
     <lastmod>2026-11-07</lastmod>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/posts/barkdown/</loc>
+    <loc>/example-build/posts/barkdown/</loc>
     <lastmod>2026-11-05</lastmod>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/posts/tour/</loc>
+    <loc>/example-build/posts/tour/</loc>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/posts/margins/</loc>
+    <loc>/example-build/posts/margins/</loc>
     <lastmod>2026-11-09</lastmod>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/posts/welcome/</loc>
+    <loc>/example-build/posts/welcome/</loc>
     <lastmod>2026-11-01</lastmod>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/about/</loc>
+    <loc>/example-build/about/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/tags/barkdown/</loc>
+    <loc>/example-build/tags/barkdown/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/tags/brashtag/</loc>
+    <loc>/example-build/tags/brashtag/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/tags/design/</loc>
+    <loc>/example-build/tags/design/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/tags/go/</loc>
+    <loc>/example-build/tags/go/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/tags/literate-programming/</loc>
+    <loc>/example-build/tags/literate-programming/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/tags/reference/</loc>
+    <loc>/example-build/tags/reference/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/tags/tufte/</loc>
+    <loc>/example-build/tags/tufte/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/tags/</loc>
+    <loc>/example-build/tags/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/archive/</loc>
+    <loc>/example-build/archive/</loc>
   </url>
   <url>
-    <loc>https://pratik.deoghare.com/barkdown/example-build/timeline/</loc>
+    <loc>/example-build/timeline/</loc>
   </url>
 </urlset>
