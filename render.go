@@ -12,7 +12,7 @@ import (
 	"time"
 	"unicode"
 
-	bt "barkdown/brashtag"
+	bt "github.com/pratikdeoghare/brashtag"
 )
 
 // Renderer turns the body of one document into HTML.

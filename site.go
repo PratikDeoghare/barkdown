@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	bt "barkdown/brashtag"
+	bt "github.com/pratikdeoghare/brashtag"
 )
 
 // Config is the content of site.bt.

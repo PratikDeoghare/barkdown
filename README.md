@@ -4,9 +4,28 @@ A static site generator for [brashtag](https://github.com/PratikDeoghare/brashta
 dependencies outside the standard library. The source is the literate program `barkdown.lit`; the Go files
 here are generated from it.
 
+## Installation
+```
+go install github.com/pratikdeoghare/barkdown@latest
+```
+
+## Quick Start
+
+### Create example site
+```
+mkdir -p /tmp/mysite
+cd /tmp/mysite 
+barkdown init 
+barkdown serve 
+```
+
+### Tour 
+There is a tutorial at `http://localhost:8080/posts/tour/`. 
+
 ## Build
 
 ```
+go mod tidy
 go build -o barkdown .
 go test ./...
 ```

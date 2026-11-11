@@ -13,7 +13,7 @@ import (
 	"time"
 	"unicode"
 
-	bt "barkdown/brashtag"
+	bt "github.com/pratikdeoghare/brashtag"
 )
 
 // parseBrashtag parses a whole document. The text is wrapped in an anonymous

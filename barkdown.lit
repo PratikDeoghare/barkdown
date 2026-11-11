@@ -6202,9 +6202,13 @@ and example files were defined as file chunks in their own sections.
 
 #go.mod{
   ```
-  module barkdown
+  module github.com/pratikdeoghare/barkdown
 
-  go 1.22
+  go 1.24.0
+
+  toolchain go1.24.4
+
+  require github.com/pratikdeoghare/brashtag v0.0.0-20260608154049-d8aa60e7ce93
   ```
 }
 
@@ -6248,7 +6252,7 @@ and example files were defined as file chunks in their own sections.
   	"time"
   	"unicode"
 
-  	bt "barkdown/brashtag"
+  	bt "github.com/pratikdeoghare/brashtag"
   )
 
   <<<parse a document>>>
@@ -6291,7 +6295,7 @@ and example files were defined as file chunks in their own sections.
   	"time"
   	"unicode"
 
-  	bt "barkdown/brashtag"
+  	bt "github.com/pratikdeoghare/brashtag"
   )
 
   <<<renderer type>>>
@@ -6395,7 +6399,7 @@ and example files were defined as file chunks in their own sections.
   	"strings"
   	"time"
 
-  	bt "barkdown/brashtag"
+  	bt "github.com/pratikdeoghare/brashtag"
   )
 
   <<<site configuration>>>
@@ -6601,9 +6605,28 @@ and example files were defined as file chunks in their own sections.
   dependencies outside the standard library. The source is the literate program `barkdown.lit`; the Go files
   here are generated from it.
 
+  ## Installation
+  ```
+  go install github.com/pratikdeoghare/barkdown@latest
+  ```
+
+  ## Quick Start
+
+  ### Create example site
+  ```
+  mkdir -p /tmp/mysite
+  cd /tmp/mysite 
+  barkdown init 
+  barkdown serve 
+  ```
+
+  ### Tour 
+  There is a tutorial at `http://localhost:8080/posts/tour/`. 
+
   ## Build
 
   ```
+  go mod tidy
   go build -o barkdown .
   go test ./...
   ```
