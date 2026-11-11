@@ -1,0 +1,22 @@
+#title{Welcome to barkdown}
+#date{2026-11-01 09:00}
+#tags{barkdown}
+
+This is the first post of a site made with barkdown. Posts are written in brashtag: plain text, with
+`#tag{...}` bags where structure is needed.
+
+Write a paragraph, leave a blank line, write the next one. That is most of it.
+
+#more{}
+
+Everything above the `#more{}` marker is the excerpt shown on the home page. The rest appears only on the
+post's own page.
+
+#h2{Next steps}
+
+#ol{
+  Run `barkdown serve` and open the address it prints.
+  Edit this file and watch the browser reload.
+  Read #ref{tour} for every tag barkdown understands.
+  Run `barkdown build` and copy `public/` to any static host.
+}

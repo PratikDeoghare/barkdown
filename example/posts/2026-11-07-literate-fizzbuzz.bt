@@ -1,0 +1,36 @@
+#title{A literate FizzBuzz}
+#date{2026-11-07}
+#tags{literate programming, go}
+
+A bag that holds a code block is a named chunk, and a line holding only `<<<name>>>` links to it. That is
+how the original barkdown labels code, and it turns a post into a small literate program. Follow the link in the first
+block.
+
+The program counts from 1 to 100.
+
+#fizzbuzz{
+  ```go
+  func main() {
+  	for i := 1; i <= 100; i++ {
+  		<<<print one number>>>
+  	}
+  }
+  ```
+}
+
+Multiples of 15 are tested first, because they are also multiples of 3 and of 5.
+
+#print one number{
+  ```go
+  switch {
+  case i%15 == 0:
+  	fmt.Println("FizzBuzz")
+  case i%3 == 0:
+  	fmt.Println("Fizz")
+  case i%5 == 0:
+  	fmt.Println("Buzz")
+  default:
+  	fmt.Println(i)
+  }
+  ```
+}

@@ -1,0 +1,16 @@
+{{define "tagwords"}}{{range $i, $t := .}}{{if $i}}, {{end}}<a href="{{url $t.URL}}">{{$t.Name}}</a>{{end}}{{end}}
+
+{{define "meta"}}<p class="meta"><time datetime="{{iso .Date}}">{{date .Date}}</time>
+{{- if and (not .Thoughts) (gt .Updated.Unix .Date.Unix)}}, revised <time datetime="{{iso .Updated}}">{{date .Updated}}</time>{{end}}
+{{- with .Author}}, by {{.}}{{end}}. About {{.ReadingTime}} minute{{if ne .ReadingTime 1}}s{{end}} to read.
+{{- with .Latest}} {{len $.Thoughts}} thought{{if ne (len $.Thoughts) 1}}s{{end}} so far, the latest on <a href="#{{.ID}}">{{stamp .}}</a>.{{end}}
+{{- if .Draft}} <span class="draft">This is a draft.</span>{{end}}</p>{{end}}
+
+{{define "summary"}}<article class="entry">
+<h2><a href="{{url .URL}}">{{.Title}}</a>{{if .Draft}} <span class="draft">draft</span>{{end}}</h2>
+<div class="entry-body">
+<span class="marginnote entry-note"><time datetime="{{iso .Date}}">{{date .Date}}</time>{{with .Thoughts}}<br>{{len .}} thought{{if ne (len .) 1}}s{{end}}{{end}}{{with .TagRefs}}<br>Filed under {{template "tagwords" .}}{{end}}</span>
+{{.Excerpt}}
+<p class="more"><a href="{{url .URL}}">{{if .HasMore}}Keep reading{{else}}Read the post{{end}}<span class="visually-hidden">: {{.Title}}</span></a></p>
+</div>
+</article>{{end}}

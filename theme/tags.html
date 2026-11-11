@@ -1,0 +1,5 @@
+{{define "content"}}<header class="page-header"><h1>Tags</h1></header>
+{{if .Site.Tags}}<ul class="tag-index">
+{{range .Site.Tags}}<li><a href="{{url .URL}}">{{.Name}}</a> <span class="count">{{len .Posts}}</span></li>
+{{end}}</ul>{{else}}<p class="empty">No tags yet. Add <code>#tags{...}</code> to a post to file it.</p>{{end}}
+{{end}}

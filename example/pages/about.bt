@@ -1,0 +1,14 @@
+#title{About}
+#weight{1}
+
+This site was made by `barkdown init`. Replace its files with your own:
+
+#ul{
+  - `site.bt` holds the settings.
+  - `posts/` holds the posts, newest first on the home page.
+  - `pages/` holds pages like this one, which appear in the menu.
+  - `static/` is copied to the site as it is.
+  - `templates/` may override any part of the theme.
+}
+
+See #ref{tour} for everything a post can contain.

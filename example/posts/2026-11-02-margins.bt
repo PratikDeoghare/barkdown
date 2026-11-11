@@ -1,0 +1,26 @@
+#title{Notes on margins}
+#date{2026-11-02}
+#tags{design, tufte}
+#order{newest}
+
+Thoughts on margins as they come to me while building this site's theme. They will keep arriving.
+
+#thought{2026-11-02 08:15
+  Tufte's books keep a wide margin on every page, and use it: notes, small pictures, captions. The margin
+  is not empty space waiting for something; it is where the second voice of the book lives.
+}
+
+#thought{2026-11-04
+  A footnote asks the reader to leave the line and come back. A sidenote waits beside it.#fn{This one,
+  for instance.} The difference sounds small and is not.
+}
+
+#thought{2026-11-09 07:45
+  On a phone there is no margin, so the notes fold away behind their numbers. Tufte CSS does this with a
+  hidden checkbox and no script at all, which is the kind of trick worth keeping.
+}
+
+#tweet{2026-11-06 22:10
+  Code wants a margin too: the language of a listing, its name in a literate program, a button to copy it.
+  None of these is part of the code, so none of them should sit on top of it.
+}

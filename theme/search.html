@@ -1,0 +1,9 @@
+{{define "content"}}<header class="page-header"><h1>Search</h1></header>
+<form id="search-form" class="search" role="search" action="{{url "/search/"}}" data-index="{{url "/search.json"}}">
+<label for="search-input" class="visually-hidden">Search the posts and pages</label>
+<input id="search-input" type="search" name="q" placeholder="What are you looking for?" autocomplete="off" autofocus>
+</form>
+<p id="search-status" class="meta" aria-live="polite"></p>
+<div id="search-results"></div>
+<noscript><p>Search needs JavaScript. The <a href="{{url "/archive/"}}">archive</a> lists every post.</p></noscript>
+{{end}}

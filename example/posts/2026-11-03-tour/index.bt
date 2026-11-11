@@ -1,0 +1,139 @@
+#title{A tour of barkdown}
+#date{2026-11-03}
+#tags{barkdown, brashtag, reference}
+#summary{Every tag barkdown understands, shown in use.}
+
+#epigraph{
+  Programs must be written for people to read, and only incidentally for machines to execute.
+  #by{Harold Abelson and Gerald Jay Sussman, #cite{Structure and Interpretation of Computer Programs}}
+}
+
+#newthought{This post shows} what a barkdown post can contain. Its source is `posts/2026-11-03-tour/index.bt`;
+read the two side by side.
+
+#more{}
+
+#toc{}
+
+#h2{Text}
+
+Paragraphs are separated by blank lines. Inside them you can write #b{bold}, #i{italic}, #em{emphasis},
+#code{inline code} or `inline code`, #mark{highlights}, #s{struck text}, H#sub{2}O, E = mc#sup{2}, keys
+like #kbd{Ctrl} + #kbd{C}, and abbreviations such as #abbr{HTML HyperText Markup Language}. A line
+break#br{}goes like this. The characters `#`, `{`, `}` and backticks go between backticks.
+
+Links take the URL first: #link{https://github.com/PratikDeoghare/brashtag the brashtag repository}.
+Links to other posts use their slug, like #ref{welcome}, and are checked when the site is built. A URL with
+a fragment goes between backticks: #link{`https://go.dev/doc/#learning` learning Go}.
+
+#quote{
+  Let us change our traditional attitude to the construction of programs: Instead of imagining that our main
+  task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we
+  want a computer to do.
+  #by{Donald E. Knuth, #cite{Literate Programming}}
+}
+
+#h2{Lists}
+
+#ul{
+  - Each line is an item.
+  - A line may start with a dash, as in Markdown.
+  #ul{
+    - A nested list sits on a line of its own.
+  }
+  - Items can hold #b{markup} and `code, with commas`.
+}
+
+#ol{
+  First
+  Second
+  Third
+}
+
+The comma separated list of the original barkdown still works, and like every list it is a block of its own:
+
+#list{one, two, three}
+
+#h2{Tables}
+
+#table{
+  Language | Typing  | First appeared
+  ---      | ---     | ---
+  Go       | static  | 2009
+  Python   | dynamic | 1991
+  #caption{Cells are separated by pipes; a row of dashes makes the row above it a header.}
+}
+
+#h2{Code}
+
+```go
+package main
+
+import "fmt"
+
+// main says hello.
+func main() {
+	fmt.Println("Hello, barkdown", 42)
+}
+```
+
+```python
+def fib(n):
+    """Return the n-th Fibonacci number."""
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
+```
+
+```sh
+# build the site and publish it
+barkdown build -strict && rsync -a public/ "$HOST:/var/www/site/"
+```
+
+```bt
+#title{A post}
+Some text with `#code` and a #b{bold} word.
+```
+
+#h2{Notes and asides}
+
+Notes are written in place#fn{Like this one. It sits in the margin, level with the line that mentions it.}
+and numbered automatically#fn{On a phone there is no margin, so the number becomes a button: tap it to read the
+note.}. A margin note has no number.#marginnote{A margin note is for a remark or a caption that needs no
+reference mark.}
+
+#newthought{A change of subject} that does not deserve a heading can open with small capitals instead.
+
+#note{Call-outs come in six kinds: note, tip, info, warning, danger and important.}
+
+#tip{#title{A custom title}A #code{title} bag inside a call-out replaces its label.}
+
+#warning{A stray `}` in prose ends the document early. Barkdown reports the line.}
+
+#details{
+  #summary{Click to see more}
+  This stays hidden until the reader asks for it.
+}
+
+#h2{Figures}
+
+#figure{diagram.svg How barkdown works: a post is parsed into a tree, and the tree is rendered as HTML. The
+image lives next to the post, in its bundle.}
+
+#h2{Math and diagrams}
+
+Inline math is code between dollar signs: `$e^{i\pi} + 1 = 0$`. Display math uses a bag:
+
+#math{`\sum_{k=1}^{n} k = \frac{n(n+1)}{2}`}
+
+Diagrams are Mermaid code blocks:
+
+```mermaid
+graph LR
+  A[post.bt] --> B[brashtag tree] --> C[HTML page]
+```
+
+#h2{Raw HTML}
+
+#html{`<p class="center"><small>When nothing else will do, HTML passes through.</small></p>`}

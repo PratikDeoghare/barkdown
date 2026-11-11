@@ -1,0 +1,71 @@
+{{define "base"}}<!doctype html>
+<html lang="{{.Site.Language}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{if .Title}}{{.Title}}, {{end}}{{.Site.Title}}</title>
+<meta name="description" content="{{.Description}}">
+<meta name="generator" content="barkdown">
+<meta name="theme-color" content="#fffff8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151515" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="{{abs .URL}}">
+<link rel="alternate" type="application/atom+xml" title="{{.Site.Title}}" href="{{url "/feed.xml"}}">
+<link rel="alternate" type="application/rss+xml" title="{{.Site.Title}} (RSS)" href="{{url "/rss.xml"}}">
+{{- if or (eq .Kind "timeline") (and .Doc .Doc.Thoughts)}}
+<link rel="alternate" type="application/atom+xml" title="{{.Site.Title}}: thoughts" href="{{url "/timeline/feed.xml"}}">
+{{- end}}
+<link rel="icon" type="image/svg+xml" href="{{url "/favicon.svg"}}">
+{{- with .Site.Fonts}}
+<style>
+@font-face { font-family: "et-book"; src: url("{{.}}/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: "et-book"; src: url("{{.}}/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"); font-weight: normal; font-style: italic; font-display: swap; }
+@font-face { font-family: "et-book"; src: url("{{.}}/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"); font-weight: bold; font-style: normal; font-display: swap; }
+</style>
+{{- end}}
+<link rel="stylesheet" href="{{asset "style.css"}}">
+<meta property="og:site_name" content="{{.Site.Title}}">
+<meta property="og:title" content="{{or .Title .Site.Title}}">
+<meta property="og:description" content="{{.Description}}">
+<meta property="og:url" content="{{abs .URL}}">
+<meta property="og:type" content="{{if eq .Kind "post"}}article{{else}}website{{end}}">
+{{- with .Doc}}{{if eq .Kind "post"}}
+<meta property="article:published_time" content="{{rfc3339 .Date}}">
+{{- range .Tags}}
+<meta property="article:tag" content="{{.}}">
+{{- end}}{{end}}{{end}}
+<meta name="twitter:card" content="summary">
+<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+{{- if .Math}}
+<script id="MathJax-script" async src="{{.Site.MathJax}}"></script>
+{{- end}}
+{{- if .Mermaid}}
+<script type="module">import mermaid from "{{.Site.Mermaid}}";var d=document.documentElement.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");mermaid.initialize({startOnLoad:true,theme:d==="dark"?"dark":"neutral"});</script>
+{{- end}}
+</head>
+<body class="kind-{{.Kind}}"{{if .Site.LiveReload}} data-livereload="{{url "/__livereload"}}"{{end}}>
+<a class="skip" href="#main">Skip to the writing</a>
+<header class="masthead">
+<div class="wrap">
+<p class="brand"><a href="{{url "/"}}">{{.Site.Title}}</a></p>
+{{with .Site.Subtitle}}<p class="tagline">{{.}}</p>{{end}}
+<nav class="menu" aria-label="Site">
+{{- range .Site.Menu}}
+<a href="{{url .URL}}"{{if eq .URL $.URL}} aria-current="page"{{end}}>{{.Title}}</a>
+{{- end}}
+<button class="lamp" type="button">Dim the lamp</button>
+</nav>
+</div>
+</header>
+<main id="main" class="wrap">
+{{template "content" .}}
+</main>
+<footer class="colophon">
+<div class="wrap">
+<p>{{if .Site.Footer}}{{.Site.Footer}}{{else}}{{or .Site.Author .Site.Title}}, {{(now).Year}}.{{end}}</p>
+<p>Follow along with the <a href="{{url "/feed.xml"}}">Atom feed</a> or <a href="{{url "/rss.xml"}}">RSS</a>.{{if not .Site.Footer}} Made with barkdown.{{end}}</p>
+</div>
+</footer>
+<script src="{{asset "site.js"}}" defer></script>
+</body>
+</html>
+{{end}}

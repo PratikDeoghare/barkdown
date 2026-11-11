@@ -1,0 +1,22 @@
+{{define "content"}}{{with .Doc}}
+<article class="post">
+<header class="post-header">
+<h1>{{.Title}}</h1>
+{{with .Subtitle}}<p class="subtitle">{{.}}</p>{{end}}
+{{template "meta" .}}
+</header>
+<div class="content">
+{{.Content}}
+</div>
+<footer class="post-foot">
+{{with .TagRefs}}<p class="filed">Filed under {{template "tagwords" .}}.</p>{{end}}
+{{if .Related}}<section class="related"><h2>More on the same subjects</h2><ul>
+{{range .Related}}<li><a href="{{url .URL}}">{{.Title}}</a>, <time datetime="{{iso .Date}}">{{date .Date}}</time></li>
+{{end}}</ul></section>{{end}}
+{{if or .Prev .Next}}<nav class="prevnext" aria-label="Neighbouring posts">
+{{with .Prev}}<p>Before this, <a href="{{url .URL}}" rel="prev">{{.Title}}</a></p>{{end}}
+{{with .Next}}<p>After this, <a href="{{url .URL}}" rel="next">{{.Title}}</a></p>{{end}}
+</nav>{{end}}
+</footer>
+</article>
+{{end}}{{end}}

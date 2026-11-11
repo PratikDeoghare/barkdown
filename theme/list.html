@@ -1,0 +1,14 @@
+{{define "content"}}
+{{- if eq .Kind "tag"}}
+<header class="page-header"><h1>Filed under {{.Tag.Name}}</h1>
+<p class="meta">{{len .Posts}} post{{if ne (len .Posts) 1}}s{{end}}. <a href="{{url "/tags/"}}">See every tag.</a></p></header>
+{{- end}}
+{{if .Posts}}<div class="entries">
+{{range .Posts}}{{template "summary" .}}
+{{end}}</div>
+{{- else}}<p class="empty">No posts yet. Add a file to <code>posts/</code> and build again.</p>{{end}}
+{{with .Pager}}{{if gt .Total 1}}<nav class="pager" aria-label="Pages">
+{{- if .Newer}}<a href="{{url .Newer}}" rel="prev">Newer posts</a>{{else}}<span></span>{{end}}
+<span class="pager-where">Page {{.Number}} of {{.Total}}</span>
+{{- if .Older}}<a href="{{url .Older}}" rel="next">Older posts</a>{{else}}<span></span>{{end}}</nav>{{end}}{{end}}
+{{end}}

@@ -1,0 +1,15 @@
+{{define "content"}}<header class="page-header"><h1>Timeline</h1>
+<p class="meta">Posts that grow a thought at a time, the most recently added to first. <a href="{{url "/timeline/feed.xml"}}">Follow every new thought with its own feed.</a></p></header>
+{{if .Posts}}<div class="entries">
+{{range .Posts}}{{$d := .}}<article class="entry">
+<h2><a href="{{url $d.URL}}">{{$d.Title}}</a></h2>
+<div class="entry-body">
+<span class="marginnote entry-note">{{len $d.Thoughts}} thought{{if ne (len $d.Thoughts) 1}}s{{end}}{{with $d.Latest}}<br>the latest on <time datetime="{{rfc3339 .Time}}">{{stamp .}}</time>{{end}}</span>
+{{with $d.Latest}}<blockquote class="latest-thought">
+{{.HTML}}</blockquote>
+<p class="more"><a href="{{url $d.URL}}#{{.ID}}">Read it in place</a>, or <a href="{{url $d.URL}}">the whole post</a>.</p>{{end}}
+</div>
+</article>
+{{end}}</div>
+{{- else}}<p class="empty">No thoughts yet. Add <code>#thought{2026-11-11 09:30 ...}</code> to any post to start one.</p>{{end}}
+{{end}}
