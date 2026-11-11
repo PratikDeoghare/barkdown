@@ -1,5 +1,7 @@
 # barkdown
 
+**DISCLAIMER: This is VIBE coded.**
+
 A static site generator for [brashtag](https://github.com/PratikDeoghare/brashtag), in Go, with no
 dependencies outside the standard library. The source is the literate program `barkdown.lit`; the Go files
 here are generated from it.
